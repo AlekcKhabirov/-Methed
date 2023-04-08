@@ -60,3 +60,54 @@ git push
 git clone https://github.com/AlekcKhabirov/-Methed.git
 сохраняет изменения отслеживаемых файлов и выполняет коммит
 git commit -a -m 'сохраняет изменения отслеживаемых файлов и выполняет коммит
+
+#дополнения LVL2
+# GIT LVL 2
+### Получение изменений с Github
+```shell
+git pull --rebase
+```
+### Восстановление файла
+```shell
+git restore index.js
+```
+### Восстановление файла
+```shell
+git log # логи
+git log -p # логи с diff
+```
+### Посмотреть коммиты файла
+```shell
+git blame README.md
+```
+### Поиск подстроки в файлах
+```shell
+git grep строка
+```
+### Откатить изменения до коммита
+```shell
+git reset
+git reset --hard HEAD~
+```
+### Дописать последний коммит
+```shell
+git commit --amend
+```
+### путешествие по коммитам
+```shell
+git checkout <хеш коммита>
+git checkout main # вернуться
+```
+### путешествие по коммитам
+```shell
+git stash # убрать в stash
+git stash pop # достать из stash
+```
+git log --graph # просмотр в виде графика
+git log --graph --oneline # просмотр в виде удобного графика
+### работа с ветками
+```shell
+git checkout -b {имя ветки} # создать новую ветку
+git checkout main # перейти в ветку
+git merge {имя ветки} # слить ветку
+```
